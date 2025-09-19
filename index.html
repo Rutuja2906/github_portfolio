@@ -46,27 +46,42 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">
-                        Hey, I'm Rutuja 👋
-                    </h1>
-                    <p class="hero-subtitle">
-                        Passionate Microelectronics Engineer from Hamburg, specializing in FPGA development,
-                        embedded systems, and ADAS applications for next-generation automotive technologies.
-                    </p>
-                    <div class="hero-mission">
-                        <h3>My Mission</h3>
-                        <p>Bridging Hardware and Software: Where innovation meets precision engineering,
-                            and cutting-edge technology drives the future of autonomous systems. 🚀</p>
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hey, I'm Rutuja Patil 👋
+                        </h1>
+                        <p class="hero-subtitle">
+                            Passionate Microelectronics Engineer from Hamburg, specializing in FPGA development,
+                            embedded systems, and ADAS applications for next-generation automotive technologies.
+                        </p>
+                        <div class="github-stats">
+                            <a href="https://www.linkedin.com/in/rutujapatil2906" class="stat-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="github-stats">
-                        <a href="https://github.com/Rutuja2906" class="stat-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Profile</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rutujapatil2906" class="stat-item">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
+                    <div class="hero-profile">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="assets/portfolio_1.jpg" alt="Rutuja Patil - Microelectronics Engineer"
+                                    width="200" height="240" loading="eager" decoding="async" fetchpriority="high">
+                            </div>
+                            <div class="floating-icons">
+                                <div class="icon-item" style="--delay: 0s">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="icon-item" style="--delay: 0.5s">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="icon-item" style="--delay: 1s">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="icon-item" style="--delay: 1.5s">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,21 +94,20 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            Namaste! 🙏 I'm a Microelectronics and Microsystems graduate student at Hamburg University
-                            of Technology
-                            with a strong background in electrical engineering and a passion for cutting-edge
-                            technology.
+                            I’m a Microelectronics & Microsystems graduate student at Hamburg University of Technology
+                            focused on embedded systems and FPGA design for ADAS. At Bosch, I prototype FPGA-based
+                            platforms
+                            for next-generation MMIC radar SoCs and support early hardware testing using OpenOCD,
+                            Lauterbach,
+                            pytest, and Jenkins.
                         </p>
                         <p>
-                            Currently working as an intern at Bosch on FPGA-based prototypes for next-generation MMIC
-                            radar SoCs,
-                            I bring expertise in embedded systems, ADAS applications, and rapid prototyping.
+                            Recently, I built a secure OTA firmware-update flow on the Nordic nRF52832 with Zephyr RTOS
+                            and MCUBoot (BLE).
+                            I enjoy turning block diagrams into tested, reproducible demos, working in C/Embedded C,
+                            Python, Verilog, and MATLAB/Simulink.
                         </p>
                         <div class="contact-links">
-                            <a href="https://github.com/Rutuja2906" class="contact-btn">
-                                <i class="fab fa-github"></i>
-                                View my GitHub
-                            </a>
                             <a href="#contact" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                                 Contact me
@@ -103,8 +117,13 @@
                     <div class="about-skills">
                         <div class="skill-category">
                             <h4><i class="fas fa-microchip"></i> Hardware Development</h4>
-                            <p>FPGA prototyping, PCB design, and embedded system development for automotive
-                                applications.</p>
+                            <p>FPGA prototyping (SoC/AXI), MCU board bring-up (nRF52, STM32), and mixed-signal PCB
+                                validation for automotive-grade designs.</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-microchip"></i> Embedded Systems</h4>
+                            <p>Zephyr/FreeRTOS firmware, device drivers (I²C, SPI, UART, CAN, BLE), secure OTA with
+                                MCUBoot, and hardware bring-up/debug using OpenOCD & TRACE32 with pytest/Jenkins CI.</p>
                         </div>
                         <div class="skill-category">
                             <h4><i class="fas fa-code"></i> Software Engineering</h4>
@@ -240,8 +259,13 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Over The Air (OTA) Device Firmware Update on BLE SoCs</h3>
-                            <span class="project-date">06/2024 – 12/2024</span>
+                            <div class="project-header-left">
+                                <h3>Over The Air (OTA) Device Firmware Update on BLE SoCs</h3>
+                                <span class="project-date">06/2024 – 12/2024</span>
+                            </div>
+                            <div class="project-cover">
+                                <img src="assets/OTA_BLE_Cover.png" alt="Over The Air (OTA) BLE DFU - Project Cover">
+                            </div>
                         </div>
                         <p class="project-description">
                             Developed and implemented a secure Over-the-Air firmware update system for Nordic nRF52832
@@ -258,8 +282,13 @@
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Remote Transformer Monitoring using IoT and GSM</h3>
-                            <span class="project-date">07/2018 – 06/2019</span>
+                            <div class="project-header-left">
+                                <h3>Remote Transformer Monitoring using IoT and GSM</h3>
+                                <span class="project-date">07/2018 – 06/2019</span>
+                            </div>
+                            <div class="project-cover">
+                                <img src="assets/Transformer_IOT Project.png" alt="Remote Transformer Monitoring using IoT and GSM - Project Cover">
+                            </div>
                         </div>
                         <p class="project-description">
                             Designed and fabricated a monitoring and controlling system for distribution transformers
@@ -276,8 +305,13 @@
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Solar Tracking System</h3>
-                            <span class="project-date">03/2018 – 05/2018</span>
+                            <div class="project-header-left">
+                                <h3>Solar Tracking System</h3>
+                                <span class="project-date">03/2018 – 05/2018</span>
+                            </div>
+                            <div class="project-cover">
+                                <img src="assets/Solar_tracking.png" alt="Solar Tracking System - Project Cover">
+                            </div>
                         </div>
                         <p class="project-description">
                             Designed an intelligent solar tracking system using LDR sensors and servo motors
@@ -294,8 +328,13 @@
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Single Phase Motor Protection System</h3>
-                            <span class="project-date">11/2017 – 06/2018</span>
+                            <div class="project-header-left">
+                                <h3>Single Phase Motor Protection System</h3>
+                                <span class="project-date">11/2017 – 06/2018</span>
+                            </div>
+                            <div class="project-cover">
+                                <img src="assets/Single Phase Motor Protection System.png" alt="Single Phase Motor Protection System - Project Cover">
+                            </div>
                         </div>
                         <p class="project-description">
                             Developed a motor protection system against under-voltage and over-voltage conditions
@@ -398,18 +437,10 @@
                     </div>
 
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+4915781282305">(+49) 15781282305</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Location</h4>
-                            <p>Mauerstraße 48, 72764 Reutlingen, Germany</p>
+                            <p>Reutlingen, Germany</p>
                         </div>
                     </div>
 
